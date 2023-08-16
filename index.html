@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Encryptor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="img/favicon.svg" href="img/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h2 class="logo">
+        Key
+        <span class="enrc">Encr</span><span class="yptor">yptor</span>
+      </h2>
+      <div class="iconos">
+        <ul class="items">
+          <li>
+            <a href="#"><i class="fi fi-brands-github"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fi fi-brands-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/muniveDev" target="_blank"
+              ><i class="fi fi-brands-behance"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container">
+          <textarea
+            class="text-area"
+            id="text-area"
+            cols="30"
+            rows="10"
+            placeholder="Write a message"
+          ></textarea>
+
+          <div class="box" id="box">
+            <textarea
+              class="message-Encrypted"
+              id="message-Encrypted"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <img id="image" src="img/image.svg" alt="" />
+            <h3 id="text">You haven't encrypted a message yet</h3>
+            <p id="indication">Enter a message to encrypt</p>
+
+            <div>
+              <button class="copy" id="copy" onclick="btnCopy()">Copiar</button>
+            </div>
+          </div>
+        </div>
+        <div class="warning">
+          <img src="img/Icon-Advertencia.svg" alt="" />
+          <p>Only lowercase letter and no accents.</p>
+        </div>
+
+        <div class="btns">
+          <button class="btn-decrypt" id="btn-decrypt" onclick="btnDecrypt()">
+            Decrypt
+          </button>
+          <button class="btn-encrypt" id="btn-encrypt" onclick="btnEncrypt()">
+            Encrypt
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <img src="img/icon-copyright.svg" alt="" />
+        <p>Copyright Munive Dev All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
