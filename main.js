@@ -84,5 +84,5 @@ function btnCopy() {
   SECTION_ENCRYPTED.select();
   navigator.clipboard.writeText(SECTION_ENCRYPTED.value);
   SECTION_ENCRYPTED.value = "";
-  alert("Texto Copiado");
+  alert("Text copied successfully");
 }
